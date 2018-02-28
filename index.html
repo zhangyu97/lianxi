@@ -30,6 +30,6 @@
 <script>
     let box = document.querySelector(".box");
     box.onTouchStart = function (e) {
-        e.touches
+        this.innerHTML = e.targetTouches.length;
     }
 </script>
